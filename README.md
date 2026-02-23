@@ -7,6 +7,18 @@ A new Flutter project.
 
 Lenguaje Dart Flutter, Nivel principiante, ejemplo de navegación entre 3 páginas utilizando rutas nombradas, desde main llamar a página 1, En la página mostrar en appbar el título "Inicio" color blanco con fondo azul y en body, en una columna mostrar texto (Página inicial) más un botón para ir a la segunda página, en la segunda página mostrar el appbar "segunda página" color negro con fondo verde y en body mostrar una imagen desde la red más un botón para ir a la tercera página, en la tercera página en appbar mostrar título "Tercera página" color rosa con fondo azul marino y en body mostrar un container en 200 por 200 azul claro. Debe ser atractivo fácil navegación y mostrar todo el código en un solo archivo. 
 
+<img width="286" height="482" alt="image" src="https://github.com/user-attachments/assets/18c09570-b8eb-4a73-882d-81c159bdde6d" />
+<img width="288" height="482" alt="image" src="https://github.com/user-attachments/assets/4c03cc0d-01c2-436d-8a3e-467194b03a00" />
+<img width="288" height="478" alt="image" src="https://github.com/user-attachments/assets/57d3c6c5-8209-4c7e-aa79-cdad28967af9" />
+
+<img width="1255" height="504" alt="image" src="https://github.com/user-attachments/assets/558aa4be-28dd-4d79-af87-28e3f52688a8" />
+<img width="1250" height="500" alt="image" src="https://github.com/user-attachments/assets/ed58f7ac-a6c3-431f-84ad-f7346f8fe485" />
+<img width="1249" height="500" alt="image" src="https://github.com/user-attachments/assets/d496955c-f7ad-4d0d-a88b-8172236774de" />
+
+
+
+
+
 This project is a starting point for a Flutter application.
 
 A few resources to get you started if this is your first Flutter project:
