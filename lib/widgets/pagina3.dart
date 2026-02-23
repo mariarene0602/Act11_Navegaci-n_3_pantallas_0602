@@ -1,51 +1,34 @@
 import 'package:flutter/material.dart';
 
-// --- PÁGINA 2: IMAGEN ---
-class SegundaPagina extends StatelessWidget {
-  const SegundaPagina({super.key});
+class TerceraPagina extends StatelessWidget {
+  const TerceraPagina({super.key});
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("Segunda Página", style: TextStyle(color: Colors.white)), // Corrected text color for better contrast
-        backgroundColor: Colors.green,
+        title: const Text(
+          "Tercera página",
+          style: TextStyle(color: Colors.pink),
+        ),
+        backgroundColor: Colors.indigo[900], // A deep blue color
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
-            const Padding(
-              padding: EdgeInsets.all(20.0),
-              child: Text("¡Bienvenido a la segunda etapa!", style: TextStyle(fontSize: 18)),
-            ),
-            // Imagen desde la red
-            ClipRRect(
-              borderRadius: BorderRadius.circular(15),
-              child: Image.network(
-                'https://picsum.photos/400/300',
-                height: 250,
-                fit: BoxFit.cover, // Added fit property to image
-                loadingBuilder: (context, child, loadingProgress) {
-                  if (loadingProgress == null) return child;
-                  return Center(
-                    child: CircularProgressIndicator(
-                      value: loadingProgress.expectedTotalBytes != null
-                          ? loadingProgress.cumulativeBytesLoaded /
-                              loadingProgress.expectedTotalBytes!
-                          : null,
-                    ),
-                  );
-                },
-                errorBuilder: (context, error, stackTrace) => const Icon(Icons.error, size: 50),
+      body: Center(
+        child: Container(
+          width: 200,
+          height: 200,
+          decoration: BoxDecoration(
+            color: Colors.lightBlue.shade200,
+            borderRadius: BorderRadius.circular(15),
+            boxShadow: [
+              BoxShadow(
+                color: Colors.black.withOpacity(0.2),
+                spreadRadius: 2,
+                blurRadius: 10,
+                offset: const Offset(0, 5),
               ),
-            ),
-            const SizedBox(height: 30),
-            ElevatedButton(
-              style: ElevatedButton.styleFrom(backgroundColor: Colors.green[100]),
-              onPressed: () => Navigator.pushNamed(context, '/tercera'),
-              child: const Text("Ir a la tercera página", style: TextStyle(color: Colors.black)),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
     );
